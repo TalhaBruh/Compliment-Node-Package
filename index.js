@@ -43,12 +43,12 @@ function generateCompliment(language = currentLanguage) {
 
 // Function to add a custom compliment
 function addCompliment(newCompliment) {
-    compliments.push(newCompliment);
+    complimentsByLanguage[currentLanguage].push(newCompliment);
 }
 
 // Function to reset compliments to default
 function resetCompliments() {
-    compliments = [
+    complimentsByLanguage[currentLanguage] = [
         "You're as bright as a shooting star on a clear night!",
         "Your smile could light up the darkest room!",
         "You're a ray of sunshine on a cloudy day!",
@@ -71,5 +71,10 @@ function setLanguage(language) {
     currentLanguage = language.toLowerCase();
 }
 
+// Function to get the list of supported languages
+function getSupportedLanguages() {
+    return Object.keys(complimentsByLanguage);
+}
+
 // Export the functions so they can be used by other modules
-module.exports = { generateCompliment, addCompliment, resetCompliments, setLanguage };
+module.exports = { generateCompliment, addCompliment, resetCompliments, setLanguage, getSupportedLanguages };
