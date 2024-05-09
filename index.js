@@ -18,5 +18,10 @@ function generateCompliment() {
     return compliments[randomIndex];
 }
 
+// Function to add a custom compliment
+function addCompliment(newCompliment) {
+    compliments.push(newCompliment);
+}
+
 // Export the function so it can be used by other modules
 module.exports = { generateCompliment };
