@@ -1,0 +1,22 @@
+{
+  "name": "compliment-node-package",
+  "version": "1.0.0",
+  "description": "npm package that generated random quirky compliments when the function is called",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalhaBruh/npm-Compliment-Package.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Syed Talha Shah",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TalhaBruh/npm-Compliment-Package/issues"
+  },
+  "homepage": "https://github.com/TalhaBruh/npm-Compliment-Package#readme"
+}
